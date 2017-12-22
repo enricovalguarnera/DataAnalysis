@@ -1,0 +1,33 @@
+All'interno della cartella Tesina MAD, oltre ai file già forniti,
+si possono trovare i seguenti file:
+
+1) main.m                ->  script principale tramite la quale si può direttamente eseguire il progetto,
+                             e visualizzare la produzione dei risultati. 
+
+2) caricaDataset-m       ->  funzione che viene invocata all'interno della funzione main, carica il dataset
+			     fornito.
+
+3) bayesian_classifier.m ->  funzione che viene invocata all'interno del file main.m . 
+			     E' la funzione che implementa l'algoritmo di classificazione, 
+			     in particolare un classificatore bayesiano.
+
+4) PCA.m		 ->  funzione che viene invocata nel main. Prende in input il dataset e le direzioni m.
+			     Produce una matrice , che corrisponde al dataset proiettato sulle m direzioni.
+
+5) rprojection.m	 ->  funzione che viene invocata nel main. Prende in input il dataset e le direzioni m.
+			     Crea la matrice A secondo quanto indicato nel testo della tesina (matrice di Achlioptas Rij).
+			     Produce una matrice che corrisponde al dataset proiettato sulle m direzioni,
+			     secondo l'operazione descritta sul testo della tesina (matrice P).				
+
+6) GraficoCX.fig	 ->  grafico che mostra la soluzione (riconoscimento) della classificazione del
+			     dataset CX (dataset ottenuto mediande la proiezione PCA). Il singolo grafico mostra
+			     tante curve quante sono le m direzione su cui si proietta il dataset originario X,
+		    	     al variare della percentuale (percentuale con cui viene creato l'insieme del Training Set
+			     dal dataset.
+ 
+7) GraficoPX.fig	 ->  grafico che mostra la soluzione (riconoscimento) della classificazione del
+			     dataset PX (dataset ottenuto mediande l'applicazione del metodo delle random projection).
+			     Il singolo grafico mostra tante curve quante sono le m direzione su cui si proietta
+			     il dataset originario X, al variare della percentuale (percentuale con cui viene creato
+			     l'insieme del Training Set dal dataset.
+ 
